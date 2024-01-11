@@ -8,6 +8,6 @@ export default function Home() {
       <button className=''>
         <a className='btn-enter' href="/api/auth/login">Log in</a>
       </button>
-    </main>
+    </main> 
   )
 }
