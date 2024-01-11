@@ -1,15 +1,21 @@
-import React from 'react'
+"use client";
 
-type Props = {}
 
-const homepage = (props: Props) => {
+const Homepage: React.FC = () => {
+ 
+
   return (
     <>
-    <div>homepage</div>
-    <button><a href="/api/auth/logout">logout</a></button>
+      <section className=''>
+       
+        {/* <AddMovieModal isOpen={isModalOpen} onClose={handleCloseModal} /> */}
+      </section>
+
+      <main>
+        {/* <MovieContainer /> */}
+      </main>
     </>
+  );
+};
 
-  )
-}
-
-export default homepage
+export default Homepage;
