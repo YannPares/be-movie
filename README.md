@@ -29,11 +29,11 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```
+
 #Mockup login:
-User: admin@yannadmin.com
-Pass: Admin@01
-```
+User: ```admin@yannadmin.com```
+Pass: ```Admin@01```
+
 
 ## Resume
 
