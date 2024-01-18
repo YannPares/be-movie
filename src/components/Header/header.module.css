@@ -1,0 +1,22 @@
+.navbar_container{
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    background-color: rgba(64, 64, 178, 0.507);
+}
+
+
+.nav_item{
+    
+    color: white;
+}
+
+.nav_item_active {
+    color: black;
+}
+

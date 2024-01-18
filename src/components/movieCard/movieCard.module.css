@@ -1,0 +1,42 @@
+.container {
+  list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+  }
+  
+  .movieCard {
+    
+    border: 8px solid black;
+    height: 420px;
+    width: 280px;
+    background-color: white;
+    margin: 15rem 0;
+  }
+  
+  
+  .title {
+    color: black;
+    text-align: left;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .genre {
+    color: grey;
+    text-align: left;
+    margin-left: 1rem;
+  }
+  
+  .poster__container {
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .poster {
+    height: 320px;
+    width: auto;
+  }
