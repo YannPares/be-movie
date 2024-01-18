@@ -1,4 +1,4 @@
-!Disclaimer : Actually is a hard-coded due the issue on mongoDB atlas at 18/01/24
+!Disclaimer : Actually is a hard-coded project due the issue on mongoDB atlas at 18/01/24
 
 # beMovie - be your own movie
 
