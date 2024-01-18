@@ -7,12 +7,13 @@ Master in Software Development Project by **[Assembler Institute of Technology](
   - [Getting Started](#getting-started)
   - [Resume](#resume)
   - [Tecnologies](#tecnologies)
-  - [Learn More](#learn-more) 
+  - [Learn More about NextJS](#learn-more-about-nextjs) 
   - [Deploy on Vercel](#deploy-on-vercel)
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
 
 ## Getting Started
+
 
 First, run the development server after clone the project:
 
@@ -46,7 +47,7 @@ The main objective is create a FullStack project with database using Node.JS, Ne
 - [Vitest](https://vitest.dev/)
 
 
-## Learn More
+## Learn More about NextJS
 
 To learn more about Next.js, take a look at the following resources:
 
