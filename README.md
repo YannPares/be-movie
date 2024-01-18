@@ -1,7 +1,7 @@
 
 # beMovie - be your own movie
 
-![landingPage](https://gyazo.com/f5b2579731d9589391cf23d3d897fb05)
+![landingPage](https://i.gyazo.com/f5b2579731d9589391cf23d3d897fb05.jpg)
 
 Master in Software Development Project by **[Assembler Institute of Technology](https://assemblerinstitute.com/)** in order to practice **Deploy, CI/CD and Testing** with **Next.js, Vercel, Jenkins and Vitest**  
   
