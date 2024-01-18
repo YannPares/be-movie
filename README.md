@@ -1,24 +1,50 @@
+
+# beMovie - be your own movie
+
+Master in Software Development Project by **[Assembler Institute of Technology](https://assemblerinstitute.com/)** in order to practice **Deploy, CI/CD and Testing** with **Next.js, Vercel, Jenkins and Vitest**  
+  
+
+  - [Getting Started](#getting-started)
+  - [Resume](#resume)
+  - [Tecnologies](#tecnologies)
+  - [Learn More](#learn-more) 
+  - [Deploy on Vercel](#deploy-on-vercel)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
+First, run the development server after clone the project:
 
 ```bash
+npm install
+# and then
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Resume
+
+The main objective is create a FullStack project with database using Node.JS, Next.js and mongoDB deploying it on Vercel.
+
+
+## Tecnologies
+
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Node.JS](https://nodejs.org/)
+- [mongoDB](https://www.mongodb.com/es)
+- [Prisma](https://www.prisma.io/)
+- [Postman](https://www.postman.com/)
+- [Auth0](https://auth0.com/)
+- [Figma](https://www.figma.com/)
+- [Vercel](https://vercel.com/)
+- [Jenkins](https://www.jenkins.io/)
+- [Vitest](https://vitest.dev/)
+
 
 ## Learn More
 
@@ -31,6 +57,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+You can check this page on vercel https://be-movie-hub.vercel.app/
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+- Made by [Yann Parés](https://www.linkedin.com/in/ian-pares/)
+
