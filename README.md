@@ -31,11 +31,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 
 #Mockup login:
-User: 
+- User: 
 ``` bash
 admin@yannadmin.com
 ```
-Pass: 
+- Pass: 
 ``` bash
 Admin@01
 ```
