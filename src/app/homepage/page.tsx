@@ -9,11 +9,6 @@ const Homepage: React.FC = () => {
   return (
     <>
     <Header/>
-      <section className=''>
-   
-        {/* <AddMovieModal isOpen={isModalOpen} onClose={handleCloseModal} /> */}
-      </section>
-
       <main>
          <MovieContainer /> 
       </main>

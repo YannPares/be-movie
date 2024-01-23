@@ -2,6 +2,8 @@ import Link from "next/link";
 import styles from "./page.module.css";
 import { getSession } from "@auth0/nextjs-auth0";
 import Image from "next/image";
+import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
 type Props = {}
 
@@ -11,7 +13,9 @@ const ProfilePage = async(props: Props) => {
   const user = session?.user;
 
   return (
-    user && (
+    <>
+    <Header/>
+     (
       <main>
         <section className={styles.profile}>
           <h2 className={styles.title}>My Profile</h2>
@@ -42,7 +46,10 @@ const ProfilePage = async(props: Props) => {
         </section>
       </main>
     )
+    <Footer/>
+    </>
   );
 };
+
 
 export default ProfilePage
