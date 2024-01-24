@@ -6,11 +6,11 @@
   }
   
   .movieCard {
-    
+    border-radius: 5vh;
     border: 8px solid black;
     height: 420px;
     width: 280px;
-    background-color: white;
+    background-color:rgba(64, 64, 178, 0.507);
     margin: 15rem 0;
   }
   
@@ -33,7 +33,7 @@
     
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    margin: 4.5vh;
   }
   
   .poster {
