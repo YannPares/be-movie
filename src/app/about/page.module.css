@@ -1,0 +1,22 @@
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.title {
+    text-align: center;
+    font-size: 3rem;
+    padding: 3rem;
+}
+.about {
+    margin: 6rem auto;
+    width: 50%;
+    height: 50%;
+    background-color: rgba(64, 64, 178, 0.507);
+    border-radius: 20%;
+    flex-direction: column;
+}
+.description {
+    padding: 12vh;
+}

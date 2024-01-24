@@ -8,11 +8,16 @@ const Homepage: React.FC = () => {
 
   return (
     <>
-    <Header/>
+      <header>
+        <Header/>
+      </header>
       <main>
          <MovieContainer /> 
       </main>
-      <Footer/>
+      <footer>
+        <Footer/>
+      </footer>
+      
     </>
   );
 };

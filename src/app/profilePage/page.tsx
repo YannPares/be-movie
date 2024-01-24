@@ -15,7 +15,6 @@ const ProfilePage = async(props: Props) => {
   return (
     <>
     <Header/>
-     (
       <main>
         <section className={styles.profile}>
           <h2 className={styles.title}>My Profile</h2>
@@ -45,7 +44,6 @@ const ProfilePage = async(props: Props) => {
           </section>
         </section>
       </main>
-    )
     <Footer/>
     </>
   );
