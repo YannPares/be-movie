@@ -24,7 +24,7 @@ const MovieContainer = () => {
                 />
               </span>
         
-              {/* <h6 className={styles.genre}>Genre</h6> */}
+              <h6 className={styles.genre}>Genre</h6>
             </div>
    
         </li>
@@ -36,7 +36,7 @@ const MovieContainer = () => {
                   src={"https://musicart.xboxlive.com/7/fec81100-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080"}
                 />
               </span>
-              {/* <h6 className={styles.genre}>Genre</h6> */}
+              <h6 className={styles.genre}>Genre</h6>
             </div>
         </li>
         <li >
@@ -47,7 +47,7 @@ const MovieContainer = () => {
                   src={"https://image.tmdb.org/t/p/w500/uC6ykM4OcOaxS7mLMdF7eebdk1Z.jpg"}
                 />
               </span>
-              {/* <h6 className={styles.genre}>Genre</h6> */}
+              <h6 className={styles.genre}>Genre</h6>
             </div>
         </li>
         <li >
@@ -58,7 +58,7 @@ const MovieContainer = () => {
                   src={"https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg"}
                 />
               </span>
-              {/* <h6 className={styles.genre}>Genre</h6> */}
+              <h6 className={styles.genre}>Genre</h6>
             </div>
         </li>
         <li >
@@ -69,7 +69,7 @@ const MovieContainer = () => {
                   src={"https://musicart.xboxlive.com/7/de3d1100-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080"}
                 />
               </span>
-              {/* <h6 className={styles.genre}>Genre</h6> */}
+              <h6 className={styles.genre}>Genre</h6>
             </div>
         </li>
         

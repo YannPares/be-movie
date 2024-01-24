@@ -12,7 +12,7 @@ return (
     <Header/>
       <main>
         <section className={styles.about}>
-          <h2 className={styles.title}>My Profile</h2>
+          <h2 className={styles.title}>About</h2>
          
           <article className={styles.data__wrapper}>
             <section className={styles.data__title}>

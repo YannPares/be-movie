@@ -15,7 +15,10 @@
     "@prisma/client": "^5.8.1",
     "next": "14.0.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-carousel": "^4.3.0",
+    "react-dom": "^18",
+    "react-multi-carousel": "^2.8.4",
+    "react-responsive-carousel": "^3.2.23"
   },
   "devDependencies": {
     "@testing-library/react": "^14.1.2",
