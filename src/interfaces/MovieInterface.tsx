@@ -10,7 +10,6 @@ export interface Genres  {
     image: string;
     score: number;
     genres: Genres[];
-    type: "watchlist" | "watched";
   }
 
   export interface User {
