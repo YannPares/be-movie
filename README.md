@@ -1,5 +1,3 @@
-!Disclaimer : Actually is a hard-coded project due the issue on mongoDB atlas at 18/01/24
-
 # beMovie - be your own movie
 
 ![landingPage](https://i.gyazo.com/dfbe4aaa0a60333e957acb2b44ee99fa.jpg)
