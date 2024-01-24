@@ -31,7 +31,7 @@ const MovieContainer = () => {
               // alt={movie.title}
             />
           </span>
-          <h6 className={styles.genre}>{movie.genre}</h6>
+          <h6 className={styles.genre}>{movie.genres}</h6>
         </div>
       ))}
     </Carousel>
