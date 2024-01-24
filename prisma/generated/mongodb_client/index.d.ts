@@ -3169,65 +3169,41 @@ export namespace Prisma {
 
   export type AggregateGenres = {
     _count: GenresCountAggregateOutputType | null
-    _avg: GenresAvgAggregateOutputType | null
-    _sum: GenresSumAggregateOutputType | null
     _min: GenresMinAggregateOutputType | null
     _max: GenresMaxAggregateOutputType | null
-  }
-
-  export type GenresAvgAggregateOutputType = {
-    tmdb_id: number | null
-  }
-
-  export type GenresSumAggregateOutputType = {
-    tmdb_id: number | null
   }
 
   export type GenresMinAggregateOutputType = {
     id: string | null
     name: string | null
-    tmdb_id: number | null
   }
 
   export type GenresMaxAggregateOutputType = {
     id: string | null
     name: string | null
-    tmdb_id: number | null
   }
 
   export type GenresCountAggregateOutputType = {
     id: number
     name: number
-    tmdb_id: number
     moviesIds: number
     _all: number
   }
 
 
-  export type GenresAvgAggregateInputType = {
-    tmdb_id?: true
-  }
-
-  export type GenresSumAggregateInputType = {
-    tmdb_id?: true
-  }
-
   export type GenresMinAggregateInputType = {
     id?: true
     name?: true
-    tmdb_id?: true
   }
 
   export type GenresMaxAggregateInputType = {
     id?: true
     name?: true
-    tmdb_id?: true
   }
 
   export type GenresCountAggregateInputType = {
     id?: true
     name?: true
-    tmdb_id?: true
     moviesIds?: true
     _all?: true
   }
@@ -3270,18 +3246,6 @@ export namespace Prisma {
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
      * 
-     * Select which fields to average
-    **/
-    _avg?: GenresAvgAggregateInputType
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
-     * 
-     * Select which fields to sum
-    **/
-    _sum?: GenresSumAggregateInputType
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
-     * 
      * Select which fields to find the minimum value
     **/
     _min?: GenresMinAggregateInputType
@@ -3312,8 +3276,6 @@ export namespace Prisma {
     take?: number
     skip?: number
     _count?: GenresCountAggregateInputType | true
-    _avg?: GenresAvgAggregateInputType
-    _sum?: GenresSumAggregateInputType
     _min?: GenresMinAggregateInputType
     _max?: GenresMaxAggregateInputType
   }
@@ -3321,11 +3283,8 @@ export namespace Prisma {
   export type GenresGroupByOutputType = {
     id: string
     name: string
-    tmdb_id: number
     moviesIds: string[]
     _count: GenresCountAggregateOutputType | null
-    _avg: GenresAvgAggregateOutputType | null
-    _sum: GenresSumAggregateOutputType | null
     _min: GenresMinAggregateOutputType | null
     _max: GenresMaxAggregateOutputType | null
   }
@@ -3347,7 +3306,6 @@ export namespace Prisma {
   export type GenresSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     id?: boolean
     name?: boolean
-    tmdb_id?: boolean
     moviesIds?: boolean
     movies?: boolean | Genres$moviesArgs<ExtArgs>
     _count?: boolean | GenresCountOutputTypeDefaultArgs<ExtArgs>
@@ -3356,7 +3314,6 @@ export namespace Prisma {
   export type GenresSelectScalar = {
     id?: boolean
     name?: boolean
-    tmdb_id?: boolean
     moviesIds?: boolean
   }
 
@@ -3374,7 +3331,6 @@ export namespace Prisma {
     scalars: $Extensions.GetPayloadResult<{
       id: string
       name: string
-      tmdb_id: number
       moviesIds: string[]
     }, ExtArgs["result"]["genres"]>
     composites: {}
@@ -3800,7 +3756,6 @@ export namespace Prisma {
   interface GenresFieldRefs {
     readonly id: FieldRef<"Genres", 'String'>
     readonly name: FieldRef<"Genres", 'String'>
-    readonly tmdb_id: FieldRef<"Genres", 'Int'>
     readonly moviesIds: FieldRef<"Genres", 'String[]'>
   }
     
@@ -4211,7 +4166,6 @@ export namespace Prisma {
   export const GenresScalarFieldEnum: {
     id: 'id',
     name: 'name',
-    tmdb_id: 'tmdb_id',
     moviesIds: 'moviesIds'
   };
 
@@ -4434,7 +4388,6 @@ export namespace Prisma {
     NOT?: GenresWhereInput | GenresWhereInput[]
     id?: StringFilter<"Genres"> | string
     name?: StringFilter<"Genres"> | string
-    tmdb_id?: IntFilter<"Genres"> | number
     moviesIds?: StringNullableListFilter<"Genres">
     movies?: MoviesListRelationFilter
   }
@@ -4442,7 +4395,6 @@ export namespace Prisma {
   export type GenresOrderByWithRelationInput = {
     id?: SortOrder
     name?: SortOrder
-    tmdb_id?: SortOrder
     moviesIds?: SortOrder
     movies?: MoviesOrderByRelationAggregateInput
   }
@@ -4453,7 +4405,6 @@ export namespace Prisma {
     OR?: GenresWhereInput[]
     NOT?: GenresWhereInput | GenresWhereInput[]
     name?: StringFilter<"Genres"> | string
-    tmdb_id?: IntFilter<"Genres"> | number
     moviesIds?: StringNullableListFilter<"Genres">
     movies?: MoviesListRelationFilter
   }, "id">
@@ -4461,13 +4412,10 @@ export namespace Prisma {
   export type GenresOrderByWithAggregationInput = {
     id?: SortOrder
     name?: SortOrder
-    tmdb_id?: SortOrder
     moviesIds?: SortOrder
     _count?: GenresCountOrderByAggregateInput
-    _avg?: GenresAvgOrderByAggregateInput
     _max?: GenresMaxOrderByAggregateInput
     _min?: GenresMinOrderByAggregateInput
-    _sum?: GenresSumOrderByAggregateInput
   }
 
   export type GenresScalarWhereWithAggregatesInput = {
@@ -4476,7 +4424,6 @@ export namespace Prisma {
     NOT?: GenresScalarWhereWithAggregatesInput | GenresScalarWhereWithAggregatesInput[]
     id?: StringWithAggregatesFilter<"Genres"> | string
     name?: StringWithAggregatesFilter<"Genres"> | string
-    tmdb_id?: IntWithAggregatesFilter<"Genres"> | number
     moviesIds?: StringNullableListFilter<"Genres">
   }
 
@@ -4612,27 +4559,23 @@ export namespace Prisma {
   export type GenresCreateInput = {
     id?: string
     name: string
-    tmdb_id: number
     movies?: MoviesCreateNestedManyWithoutGenresInput
   }
 
   export type GenresUncheckedCreateInput = {
     id?: string
     name: string
-    tmdb_id: number
     moviesIds?: GenresCreatemoviesIdsInput | string[]
     movies?: MoviesUncheckedCreateNestedManyWithoutGenresInput
   }
 
   export type GenresUpdateInput = {
     name?: StringFieldUpdateOperationsInput | string
-    tmdb_id?: IntFieldUpdateOperationsInput | number
     movies?: MoviesUpdateManyWithoutGenresNestedInput
   }
 
   export type GenresUncheckedUpdateInput = {
     name?: StringFieldUpdateOperationsInput | string
-    tmdb_id?: IntFieldUpdateOperationsInput | number
     moviesIds?: GenresUpdatemoviesIdsInput | string[]
     movies?: MoviesUncheckedUpdateManyWithoutGenresNestedInput
   }
@@ -4640,18 +4583,15 @@ export namespace Prisma {
   export type GenresCreateManyInput = {
     id?: string
     name: string
-    tmdb_id: number
     moviesIds?: GenresCreatemoviesIdsInput | string[]
   }
 
   export type GenresUpdateManyMutationInput = {
     name?: StringFieldUpdateOperationsInput | string
-    tmdb_id?: IntFieldUpdateOperationsInput | number
   }
 
   export type GenresUncheckedUpdateManyInput = {
     name?: StringFieldUpdateOperationsInput | string
-    tmdb_id?: IntFieldUpdateOperationsInput | number
     moviesIds?: GenresUpdatemoviesIdsInput | string[]
   }
 
@@ -4836,58 +4776,20 @@ export namespace Prisma {
     _max?: NestedFloatFilter<$PrismaModel>
   }
 
-  export type IntFilter<$PrismaModel = never> = {
-    equals?: number | IntFieldRefInput<$PrismaModel>
-    in?: number[] | ListIntFieldRefInput<$PrismaModel>
-    notIn?: number[] | ListIntFieldRefInput<$PrismaModel>
-    lt?: number | IntFieldRefInput<$PrismaModel>
-    lte?: number | IntFieldRefInput<$PrismaModel>
-    gt?: number | IntFieldRefInput<$PrismaModel>
-    gte?: number | IntFieldRefInput<$PrismaModel>
-    not?: NestedIntFilter<$PrismaModel> | number
-  }
-
   export type GenresCountOrderByAggregateInput = {
     id?: SortOrder
     name?: SortOrder
-    tmdb_id?: SortOrder
     moviesIds?: SortOrder
-  }
-
-  export type GenresAvgOrderByAggregateInput = {
-    tmdb_id?: SortOrder
   }
 
   export type GenresMaxOrderByAggregateInput = {
     id?: SortOrder
     name?: SortOrder
-    tmdb_id?: SortOrder
   }
 
   export type GenresMinOrderByAggregateInput = {
     id?: SortOrder
     name?: SortOrder
-    tmdb_id?: SortOrder
-  }
-
-  export type GenresSumOrderByAggregateInput = {
-    tmdb_id?: SortOrder
-  }
-
-  export type IntWithAggregatesFilter<$PrismaModel = never> = {
-    equals?: number | IntFieldRefInput<$PrismaModel>
-    in?: number[] | ListIntFieldRefInput<$PrismaModel>
-    notIn?: number[] | ListIntFieldRefInput<$PrismaModel>
-    lt?: number | IntFieldRefInput<$PrismaModel>
-    lte?: number | IntFieldRefInput<$PrismaModel>
-    gt?: number | IntFieldRefInput<$PrismaModel>
-    gte?: number | IntFieldRefInput<$PrismaModel>
-    not?: NestedIntWithAggregatesFilter<$PrismaModel> | number
-    _count?: NestedIntFilter<$PrismaModel>
-    _avg?: NestedFloatFilter<$PrismaModel>
-    _sum?: NestedIntFilter<$PrismaModel>
-    _min?: NestedIntFilter<$PrismaModel>
-    _max?: NestedIntFilter<$PrismaModel>
   }
 
   export type MoviesCreateNestedManyWithoutUserInput = {
@@ -5025,14 +4927,6 @@ export namespace Prisma {
     connect?: MoviesWhereUniqueInput | MoviesWhereUniqueInput[]
   }
 
-  export type IntFieldUpdateOperationsInput = {
-    set?: number
-    increment?: number
-    decrement?: number
-    multiply?: number
-    divide?: number
-  }
-
   export type MoviesUpdateManyWithoutGenresNestedInput = {
     create?: XOR<MoviesCreateWithoutGenresInput, MoviesUncheckedCreateWithoutGenresInput> | MoviesCreateWithoutGenresInput[] | MoviesUncheckedCreateWithoutGenresInput[]
     connectOrCreate?: MoviesCreateOrConnectWithoutGenresInput | MoviesCreateOrConnectWithoutGenresInput[]
@@ -5158,22 +5052,6 @@ export namespace Prisma {
     _max?: NestedFloatFilter<$PrismaModel>
   }
 
-  export type NestedIntWithAggregatesFilter<$PrismaModel = never> = {
-    equals?: number | IntFieldRefInput<$PrismaModel>
-    in?: number[] | ListIntFieldRefInput<$PrismaModel>
-    notIn?: number[] | ListIntFieldRefInput<$PrismaModel>
-    lt?: number | IntFieldRefInput<$PrismaModel>
-    lte?: number | IntFieldRefInput<$PrismaModel>
-    gt?: number | IntFieldRefInput<$PrismaModel>
-    gte?: number | IntFieldRefInput<$PrismaModel>
-    not?: NestedIntWithAggregatesFilter<$PrismaModel> | number
-    _count?: NestedIntFilter<$PrismaModel>
-    _avg?: NestedFloatFilter<$PrismaModel>
-    _sum?: NestedIntFilter<$PrismaModel>
-    _min?: NestedIntFilter<$PrismaModel>
-    _max?: NestedIntFilter<$PrismaModel>
-  }
-
   export type MoviesCreateWithoutUserInput = {
     id?: string
     name: string
@@ -5237,13 +5115,11 @@ export namespace Prisma {
   export type GenresCreateWithoutMoviesInput = {
     id?: string
     name: string
-    tmdb_id: number
   }
 
   export type GenresUncheckedCreateWithoutMoviesInput = {
     id?: string
     name: string
-    tmdb_id: number
     moviesIds?: GenresCreatemoviesIdsInput | string[]
   }
 
@@ -5295,7 +5171,6 @@ export namespace Prisma {
     NOT?: GenresScalarWhereInput | GenresScalarWhereInput[]
     id?: StringFilter<"Genres"> | string
     name?: StringFilter<"Genres"> | string
-    tmdb_id?: IntFilter<"Genres"> | number
     moviesIds?: StringNullableListFilter<"Genres">
   }
 
@@ -5406,18 +5281,15 @@ export namespace Prisma {
 
   export type GenresUpdateWithoutMoviesInput = {
     name?: StringFieldUpdateOperationsInput | string
-    tmdb_id?: IntFieldUpdateOperationsInput | number
   }
 
   export type GenresUncheckedUpdateWithoutMoviesInput = {
     name?: StringFieldUpdateOperationsInput | string
-    tmdb_id?: IntFieldUpdateOperationsInput | number
     moviesIds?: GenresUpdatemoviesIdsInput | string[]
   }
 
   export type GenresUncheckedUpdateManyWithoutMoviesInput = {
     name?: StringFieldUpdateOperationsInput | string
-    tmdb_id?: IntFieldUpdateOperationsInput | number
     moviesIds?: GenresUpdatemoviesIdsInput | string[]
   }
 

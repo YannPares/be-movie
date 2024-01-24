@@ -122,7 +122,6 @@ exports.Prisma.MoviesScalarFieldEnum = {
 exports.Prisma.GenresScalarFieldEnum = {
   id: 'id',
   name: 'name',
-  tmdb_id: 'tmdb_id',
   moviesIds: 'moviesIds'
 };
 

@@ -2,6 +2,7 @@
 const nextConfig = {};
 
 module.exports = {
+  withCsrf : true,
   images: {
     remotePatterns: [
       {
