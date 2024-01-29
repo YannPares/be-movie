@@ -34,7 +34,8 @@ const ProfilePage = async(props: Props) => {
             <section className={styles.data__data}>
               <h4>{user?.name}</h4>
               <h4>{user?.email}</h4>
-              <h4>*********</h4>
+              <h4><h3>*********</h3><button className={styles.change_password}> Change Password </button></h4> 
+              
             </section>
           </article>
           <section className={styles.data__btn}>

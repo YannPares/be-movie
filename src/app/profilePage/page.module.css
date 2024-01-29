@@ -69,4 +69,11 @@
     margin: 0 auto;
     width: 15rem;
   }
+
+  .change_password {
+    /* display: flex; */
+    /* float: right; */
+    border-radius: 0.5vw;
+    max-width: 20%;
+  }
   
